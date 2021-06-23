@@ -11,6 +11,7 @@ export default class Handler extends TaskHandlerBase {
     super(resources);
   }
 
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   protected async handleCallback(data: any): Promise<void> {
     this.resources.logger.info('Healthz checked');
 
