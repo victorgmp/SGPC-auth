@@ -16,7 +16,7 @@ export default class ApiRouteImpl extends CustomApiRoute {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  public async callback(_req: Request, res: Response): Promise<any> {
+  public async callback(req: Request, res: Response): Promise<any> {
     res.sendStatus(200);
   }
 }
